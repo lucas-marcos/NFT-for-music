@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px
+}
+
+.pagina {
+    background-color: #0A0A0A;
+}
+
+.gradient-background {
+    position: absolute;
+    background: #DC06FF;
+    left: -128.36px;
+    top: -364.58px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    filter: blur(135.399px);
+    transform: rotate(-22.54deg);
+    position: fixed;
+    z-index: -1;
+}
+
+.gradiente2 {
+    top: -495px;
+    left: -208px;
+    width: 793.95px;
+    height: 931.83px;
+    background: linear-gradient(261.63deg, #7000FF 4.87%, #06FFF0 87.02%);
+    filter: blur(305.034px);
+    transform: rotate(54.35deg);
+}
+
+.gradiente1 {
+    top: 69px;
+    left: -344px;
+    width: 500px;
+    height: 500px;
+    background: #067aff;
+    filter: blur(87.03399999999999px);
+}
+
+#header {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.header-conteudo {
+    height: 75px;
+    border-bottom: 1px solid #fff;
+}
+
+.header-logo {
+    font-size: 15px;
+    width: 125px;
+    /* margin-left: 1000px; */
+}
