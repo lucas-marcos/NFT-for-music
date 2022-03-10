@@ -1,10 +1,98 @@
 * {
     margin: 0px !important;
-    padding: 0px !important;
+    padding: 0px;
 }
 
+@media (max-width: 576px) {
+    .gradient-background {
+        width: 110px !important;
+        height: 110px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .gradient-background {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .gradient-background {
+        width: 180px !important;
+        height: 180px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .gradient-background {
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .gradient-background {
+        width: 350px !important;
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .gradient-background {
+        width: 400px !important;
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .gradient-background {
+        width: 500px !important;
+        height: 500px !important;
+    }
+}
+
+
+/* 
+@media(max-width: 800px) {
+    .gabriente-segunda-sessao-imagem {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 900px) {
+    .gabriente-segunda-sessao-imagem {
+        width: 400px;
+        height: 400px;
+    }
+}
+*/
+
+@media(max-width: 1000px) {
+    .pagina>img {
+        background-color: #0A0A0A;
+        display: none;
+    }
+    /* .gabriente-segunda-sessao-imagem {
+        width: 400px;
+        height: 400px;
+    } */
+}
+
+
+/* @media(max-width: 1200px) {
+    .gabriente-segunda-sessao-imagem {
+        width: 500px;
+        height: 500px;
+    }
+} */
+
 body {
-    height: 100%;
+    background-color: #0A0A0A !important;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 .container-fluid {
@@ -34,7 +122,6 @@ h3 {
 
 h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 80px !important;
     font-style: normal;
     font-weight: 400!important;
     line-height: 97px !important;
@@ -52,7 +139,10 @@ h1 {
 }
 
 .pagina {
-    background: #0A0A0A url("img/mao\ background.png") no-repeat right center;
+    /* background: url("img/mao\ background.png") no-repeat right center;
+    background-size: cover; */
+    position: absolute;
+    z-index: -1;
 }
 
 .botao {
@@ -68,19 +158,23 @@ h1 {
     line-height: 160%;
 }
 
+.botao:hover {
+    background: linear-gradient(99.74deg, #06DBAC 5.23%, #BD00FF 92.7%);
+    border: none;
+    padding: 11px 33px !important;
+}
+
 .gradient-background {
     position: absolute;
     background: #DC06FF;
-    left: -128.36px;
-    top: -364.58px;
     width: 600px;
     height: 600px;
     border-radius: 50%;
     background-repeat: no-repeat;
     filter: blur(135.399px);
     transform: rotate(-22.54deg);
-    position: fixed;
     z-index: -1;
+    margin-left: 50px;
 }
 
 .gradiente2 {
@@ -102,6 +196,11 @@ h1 {
     filter: blur(87.03399999999999px);
 }
 
+.gradiente3 {
+    left: -128.36px;
+    top: -364.58px;
+}
+
 #header {
     background: rgba(255, 255, 255, 0.15);
 }
@@ -121,7 +220,7 @@ h1 {
 }
 
 .primeira-sessao-descricao {
-    width: 670px;
+    max-width: 670px;
 }
 
 .primeira-sessao-rodape {
@@ -134,8 +233,24 @@ h1 {
 
 .primeira-sessao-rodape-texto {
     font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 29px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 20px;
     text-transform: uppercase;
+}
+
+.segunda-sessao-conteudo-principal {
+    /* height: 100vh; */
+}
+
+.gabriente-segunda-sessao-imagem {
+    filter: blur(168px);
+    transform: rotate(-22.54deg);
+    background: linear-gradient(180deg, #2603FB 0%, #DC06FF 100%);
+}
+
+.test {
+    position: relative;
+    top: 15px;
+    left: 20px;
 }
