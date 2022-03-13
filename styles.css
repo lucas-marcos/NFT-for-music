@@ -3,92 +3,14 @@
     padding: 0px;
 }
 
-
-/* 
-@media (max-width: 576px) {
-    .gradient-background {
-        width: 110px !important;
-        height: 110px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .gradient-background {
-        width: 200px !important;
-        height: 200px !important;
-    }
-}
-
-@media (max-width: 850px) {
-    .gradient-background {
-        width: 180px !important;
-        height: 180px !important;
-    }
-}
-
-@media (max-width: 900px) {
-    .gradient-background {
-        width: 300px !important;
-        height: 300px !important;
-    }
-}
-
-@media (max-width: 1000px) {
-    .gradient-background {
-        width: 350px !important;
-        height: 350px !important;
-    }
-}
-
-@media (max-width: 1100px) {
-    .gradient-background {
-        width: 400px !important;
-        height: 400px !important;
-    }
-}
-
-@media (max-width: 1200px) {
-    .gradient-background {
-        width: 500px !important;
-        height: 500px !important;
-    }
-} */
-
-
-/* 
-@media(max-width: 800px) {
-    .gabriente-segunda-sessao-imagem {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media(max-width: 900px) {
-    .gabriente-segunda-sessao-imagem {
-        width: 400px;
-        height: 400px;
-    }
-}
-*/
-
 @media(max-width: 1000px) {
-    .pagina>img {
-        background-color: #0A0A0A;
+    #imagem {
         display: none;
     }
-    /* .gabriente-segunda-sessao-imagem {
-        width: 400px;
-        height: 400px;
-    } */
-}
-
-
-/* @media(max-width: 1200px) {
-    .gabriente-segunda-sessao-imagem {
-        width: 500px;
-        height: 500px;
+    .background {
+        height: 600px;
     }
-} */
+}
 
 body {
     background-color: #0A0A0A !important;
@@ -141,8 +63,6 @@ h1 {
 }
 
 .pagina {
-    /* background: url("img/mao\ background.png") no-repeat right center;
-    background-size: cover; */
     position: absolute;
     z-index: -1;
 }
@@ -169,8 +89,10 @@ h1 {
 .gradient-background {
     position: absolute;
     background: #DC06FF;
-    width: 600px;
-    height: 600px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
     border-radius: 50%;
     background-repeat: no-repeat;
     filter: blur(135.399px);
@@ -182,8 +104,10 @@ h1 {
 .gradiente2 {
     top: -495px;
     left: -208px;
-    width: 793.95px;
-    height: 931.83px;
+    max-width: 793.95px;
+    width: 100%;
+    max-height: 931.83px;
+    height: 100%;
     background: linear-gradient(261.63deg, #7000FF 4.87%, #06FFF0 87.02%);
     filter: blur(305.034px);
     transform: rotate(54.35deg);
@@ -192,8 +116,10 @@ h1 {
 .gradiente1 {
     top: 69px;
     left: -344px;
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
     background: #067aff;
     filter: blur(87.03399999999999px);
 }
@@ -249,13 +175,13 @@ h1 {
     width: 100%;
     height: 100%;
     position: relative;
-    /* background-image: url("img/segunda-sessao imagem 1.png"); */
 }
 
 .gabriente-segunda-sessao-imagem {
     position: absolute;
     background: #DC06FF;
     filter: blur(190px);
+    transform: none;
     background: linear-gradient(180deg, #2603FB 0%, #DC06FF 100%);
     width: 100%;
     max-width: 600px;
