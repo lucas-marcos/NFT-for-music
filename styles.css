@@ -7,6 +7,40 @@ html {
     font-size: 1rem;
 }
 
+@media(max-width: 1067px) {
+    .play-now,
+    .buy-nft {
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width: 1000px) {
+    #imagem {
+        display: none;
+    }
+    .background {
+        height: 600px;
+    }
+    .play-now,
+    .buy-nft {
+        font-size: 12px !important;
+    }
+}
+
+@media(max-width: 885px) {
+    .play-now,
+    .buy-nft {
+        font-size: 8px !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .play-now,
+    .buy-nft {
+        font-size: 6px !important;
+    }
+}
+
 @media(max-width: 719px) {
     .display-2,
     .primeira-sessao-subtitulo {
@@ -66,21 +100,6 @@ html {
     .botao {
         padding: 5px 10px !important;
         font-size: 10px !important;
-    }
-}
-
-@media(max-width: 1000px) {
-    #imagem {
-        display: none;
-    }
-    .background {
-        height: 600px;
-    }
-}
-
-@media(max-width: 1067) {
-    .primeira-sessao-rodape-texto {
-        font-size: 10px;
     }
 }
 
@@ -283,4 +302,54 @@ h1 {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.quinta-sessao-tags {
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 10px 20px !important;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.quinta-sessao-tags:hover {
+    background: #fff;
+    color: #09AF55;
+    border: none;
+    padding: 11px 21px !important;
+}
+
+.play-now {
+    font-style: normal;
+    font-size: 16.4094px;
+    padding: 10.9396px 21.8792px !important;
+    line-height: 160%;
+    padding: 10.9396px 21.8792px;
+    border: 1.09396px solid #FFFFFF;
+    border-radius: 54.698px;
+}
+
+.play-now:hover {
+    background: #fff;
+    color: #09AF55;
+    border: none;
+    padding: 12.9396px 23.8792px !important;
+}
+
+.buy-nft {
+    background: linear-gradient(99.74deg, #06DBAC 5.23%, #BD00FF 92.7%);
+    padding: 10.9396px 21.8792px;
+    border: none;
+}
+
+.buy-nft:hover {
+    background: #fff;
+    color: #09AF55;
+    padding: 10.9396px 21.8792px;
+    border: none;
 }
